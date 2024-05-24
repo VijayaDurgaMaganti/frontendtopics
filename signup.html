@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <!--favicon in a page-->
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png" />
+
+    <!--font awesome kit-->
+    <script src="https://kit.fontawesome.com/0b403d2455.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            /*border: solid 1px red;*/
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .first {
+            width: 50%;
+        }
+
+        .ima {
+            width: 100%;
+        }
+
+        .two {
+            width: 50%;
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .formy {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            box-shadow: 1px 2px 1px grey;
+            border: 0.5px solid grey;
+            padding: 3px;
+            margin-top: 2%;
+        }
+
+        .check {
+            padding: 2%;
+            /*display:flex;
+            justify-content:center;*/
+
+        }
+
+        .btn {
+            background-color: #0c4676;
+            color: white;
+            border: none;
+            padding: 3%;
+            border-radius: 20px;
+        }
+
+        .btn:hover {
+            background-color: wheat;
+            color: #0c4676;
+            border: 1px solid #0c4676;
+            margin-bottom: 2%;
+            /* transform: scale(1.2);*/
+            /* transistion: 0.8 ease-in;*/
+        }
+
+        .last {
+            margin-top: 2%;
+        }
+
+        h6 {
+            color: black;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0c4676;
+        }
+
+        .head {
+            color: blue;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        label {
+            color: #0c4676;
+            font-size: 20px;
+            margin-top: 2%;
+            margin-bottom: 0.5%;
+
+        }
+
+        input[type="text"],
+        [type="email"],
+        [type="password"] {
+            border: 1px solid grey;
+            padding: 2%;
+            box-shadow: 2px 2px 2px grey;
+            border-radius: 30px;
+        }
+
+        input[type="checkbox"] {
+            accent-color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="first">
+            <img src="https://cdn.dribbble.com/users/277921/screenshots/4223608/gw-dribbble.gif" alt="signup"
+                class="ima" />
+        </div>
+
+        <div class="two">
+            <form class="formy">
+                <h1 class="head">SignUp</h1>
+                <label><i class="fa-solid fa-user"></i> Username</label>
+                <input type="text" placeholder="Enter Username" name="username" required />
+                <label><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" placeholder="Enter Email" name="email" required />
+                <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+                <input type="text" placeholder="Enter Number" name="number" required />
+                <label><i class="fa-solid fa-lock"></i> Password</label>
+                <input type="password" placeholder="Enter Password" name="password" required />
+                <label><i class="fa-solid fa-lock"></i> Confirm Password</label>
+                <input type="password" placeholder="Enter Confirm Password" name="confirmPassword" required />
+                <div class="check">
+                    <input type="checkbox" />&nbsp;&nbsp;<label>I accept Terms and Conditions</label>
+                </div>
+                <button class="btn">Submit</button><br />
+                <hr />
+                <div class="last">
+
+                    <h6>Already have an account <a href="login.html">&nbsp;Login <i
+                                class="fa-solid fa-right-to-bracket"></i></a>
+                    </h6>
+                    <h6><a href="#">Forgot Password</a></h6>
+
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
