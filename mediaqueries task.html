@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* @media devicetype and (property responsive rbreak points){
+            tag{
+                proprty to change
+            }
+        } */
+        @media screen and (max-width:576px) {
+            .one {
+                width: 100%;
+                color: aqua;
+                background-color: coral;
+                /* border: 2px solid black; */
+
+            }
+
+            .two {
+                width: 100%;
+                color: blue;
+                background-color: yellowgreen;
+            }
+
+            .three {
+                width: 100%;
+                color: grey;
+                background-color: green;
+            }
+
+        }
+
+        @media screen and (min-width:576px) and (max-width:768px) {
+            .one {
+                width: 49%;
+                color: aqua;
+                background-color: coral;
+                /* border: 2px solid black; */
+            }
+
+            .two {
+                width: 49%;
+                color: blue;
+                background-color: yellowgreen;
+            }
+
+            .three {
+                width: 49%;
+                color: grey;
+                background-color: green;
+            }
+        }
+
+        @media all and (min-width:768px) and (max-width:992px) {
+            .one {
+                width: 33%;
+                color: aqua;
+                background-color: coral;
+
+                /* border: 2px solid black; */
+            }
+
+            .two {
+                width: 33%;
+                color: blue;
+                background-color: yellowgreen;
+            }
+
+            .three {
+                width: 33%;
+                color: grey;
+                background-color: green;
+            }
+
+        }
+
+        @media all and (min-width:992px) and (max-width:1200px) {
+            .one {
+                width: 33%;
+                color: aqua;
+                background-color: coral;
+
+                /* border: 2px solid black; */
+            }
+
+            .two {
+                width: 33%;
+                color: blue;
+                background-color: yellowgreen;
+            }
+
+            .three {
+                width: 33%;
+                color: grey;
+                background-color: green;
+            }
+
+            /* border: 2px solid black; */
+        }
+
+
+        @media screen and (min-width:1200px) {
+            .one {
+                width: 33%;
+                /* border: 2px solid black; */
+                color: aqua;
+                background-color: coral;
+
+                /* border: 2px solid black; */
+            }
+
+            .two {
+                width: 33%;
+                color: blue;
+                background-color: yellowgreen;
+            }
+
+            .three {
+                width: 33%;
+                color: grey;
+                background-color: green;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="zero">
+    <h1 class="one">MONDAY</h1>
+    <h1 class="two">TUESDAY</h1>
+    <h1 class="three">WEDNESDAY</h1>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!----<div class="container">
+        <h1 class="one">Heading 1</h1>
+        <h2 class="two">Heading 2</h2>
+        <h3 class="three">Heading 3</h2>--->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex topic</title>
+    <style>
+        .parent {
+            display: flex;
+            /*flex-direction: right;
+            flex-direction: column;
+            flex-direction: column-reverse;*/
+            flex-direction: row;
+
+            /*justify-content: start;
+            align-items: flex-end;*/
+            flex-wrap: nowrap;
+            /*flex-wrap:nowrap;*/
+            align-content: space-between;
+            border: 1px solid black;
+            width: 700px;
+            height: 500px;
+
+            /*justify-content: center;
+            justify-content: end;
+            justify-content: start;*/
+
+            /*justify-content: space-evenly;
+            justify-content: space-between;
+            justify-content: space-around;*/
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            color: white;
+        }
+
+        #one {
+            background-color: red;
+            flex-grow: 7;
+            order: 3;
+            align-self: start;
+            /*flex-shrink: 3;*/
+
+        }
+
+        #two {
+            background-color: greenyellow;
+            flex-grow: 5;
+            order: -8;
+            align-self: end;
+        }
+
+        #three {
+            background-color: blue;
+            flex-grow: 9;
+            order: -4;
+            align-self: center;
+            /*flex-shrink: 5;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child" id="one">Red</div>
+        <div class="child" id="two">Blue</div>
+        <div class="child" id="three">Green</div>
+
+        <!--<div class="child" id="one">Red</div>
+        <div class="child" id="two">Blue</div>
+        <div class="child" id="three">Green</div>
+        <div class="child" id="one">Red</div>
+        <div class="child" id="two">Blue</div>
+        <div class="child" id="three">Green</div>-->
+    </div>
+
+</body>
+
+</html>
